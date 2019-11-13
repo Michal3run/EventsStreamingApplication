@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EventTransformer\EventTransformer.csproj" />
+    <ProjectReference Include="..\EventTransformerWorker\EventTransformerWorker.csproj" />
   </ItemGroup>
 
 </Project>

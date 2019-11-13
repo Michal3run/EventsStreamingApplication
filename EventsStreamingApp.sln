@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventTransformerWorker", "..\EventsApplication\MessageProducer\EventTransformer\EventTransformerWorker.csproj", "{A6496327-8A54-4FD7-A0A1-5768650BCC16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventTransformerWorker", "EventTransformerWorker\EventTransformerWorker.csproj", "{A6496327-8A54-4FD7-A0A1-5768650BCC16}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventTransformerConsoleApp", "..\EventsApplication\MessageProducer\EventTransformerConsoleApp\EventTransformerConsoleApp.csproj", "{887B84D4-355E-43AB-85F2-AB76A1E32A81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventTransformerConsoleApp", "EventTransformerConsoleApp\EventTransformerConsoleApp.csproj", "{887B84D4-355E-43AB-85F2-AB76A1E32A81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAppCommon", "..\EventsApplication\MessageProducer\EventAppCommon\EventAppCommon.csproj", "{168040C7-6006-4919-B51B-AFD5D486B194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAppCommon", "EventAppCommon\EventAppCommon.csproj", "{168040C7-6006-4919-B51B-AFD5D486B194}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiConnector", "..\EventsApplication\MessageProducer\ApiConnector\ApiConnector.csproj", "{CBB86543-4ACF-4DE0-B463-07A889F71085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiConnector", "ApiConnector\ApiConnector.csproj", "{CBB86543-4ACF-4DE0-B463-07A889F71085}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiConnectorConsoleApp", "..\EventsApplication\MessageProducer\ApiConnectorConsoleApp\ApiConnectorConsoleApp.csproj", "{4BC5AA86-26D9-41EC-9A74-69811AC7A1DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiConnectorConsoleApp", "ApiConnectorConsoleApp\ApiConnectorConsoleApp.csproj", "{4BC5AA86-26D9-41EC-9A74-69811AC7A1DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsWebDashboard", "..\EventsApplication\MessageProducer\EventsWebDashboard\EventsWebDashboard.csproj", "{EFF468E4-FA76-4063-B3D4-18C0FC502787}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsWebDashboard", "EventsWebDashboard\EventsWebDashboard.csproj", "{EFF468E4-FA76-4063-B3D4-18C0FC502787}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
