@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventTransformerWorker", "..\EventsApplication\MessageProducer\EventTransformer\EventTransformerWorker.csproj", "{A6496327-8A54-4FD7-A0A1-5768650BCC16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventTransformerConsoleApp", "..\EventsApplication\MessageProducer\EventTransformerConsoleApp\EventTransformerConsoleApp.csproj", "{887B84D4-355E-43AB-85F2-AB76A1E32A81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAppCommon", "..\EventsApplication\MessageProducer\EventAppCommon\EventAppCommon.csproj", "{168040C7-6006-4919-B51B-AFD5D486B194}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiConnector", "..\EventsApplication\MessageProducer\ApiConnector\ApiConnector.csproj", "{CBB86543-4ACF-4DE0-B463-07A889F71085}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiConnectorConsoleApp", "..\EventsApplication\MessageProducer\ApiConnectorConsoleApp\ApiConnectorConsoleApp.csproj", "{4BC5AA86-26D9-41EC-9A74-69811AC7A1DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsWebDashboard", "..\EventsApplication\MessageProducer\EventsWebDashboard\EventsWebDashboard.csproj", "{EFF468E4-FA76-4063-B3D4-18C0FC502787}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6496327-8A54-4FD7-A0A1-5768650BCC16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6496327-8A54-4FD7-A0A1-5768650BCC16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6496327-8A54-4FD7-A0A1-5768650BCC16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6496327-8A54-4FD7-A0A1-5768650BCC16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887B84D4-355E-43AB-85F2-AB76A1E32A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887B84D4-355E-43AB-85F2-AB76A1E32A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887B84D4-355E-43AB-85F2-AB76A1E32A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887B84D4-355E-43AB-85F2-AB76A1E32A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{168040C7-6006-4919-B51B-AFD5D486B194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168040C7-6006-4919-B51B-AFD5D486B194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168040C7-6006-4919-B51B-AFD5D486B194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168040C7-6006-4919-B51B-AFD5D486B194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB86543-4ACF-4DE0-B463-07A889F71085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB86543-4ACF-4DE0-B463-07A889F71085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB86543-4ACF-4DE0-B463-07A889F71085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB86543-4ACF-4DE0-B463-07A889F71085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC5AA86-26D9-41EC-9A74-69811AC7A1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC5AA86-26D9-41EC-9A74-69811AC7A1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC5AA86-26D9-41EC-9A74-69811AC7A1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC5AA86-26D9-41EC-9A74-69811AC7A1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF468E4-FA76-4063-B3D4-18C0FC502787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF468E4-FA76-4063-B3D4-18C0FC502787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF468E4-FA76-4063-B3D4-18C0FC502787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF468E4-FA76-4063-B3D4-18C0FC502787}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {592F207B-D6DE-4762-9472-69E437FA51D6}
+	EndGlobalSection
+EndGlobal
