@@ -1,15 +1,15 @@
 ﻿using EventTransformer.Models;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace EventTransformer
 {
     public class EventsCounterManager
     {
         private readonly Dictionary<string, EventDictValue> _groupTopicDictionary = new Dictionary<string, EventDictValue>(); //ConcurrentDictionary? only one thread per application
+
+        private readonly object _locker = new object();
 
         #region Singleton
 
@@ -43,22 +43,34 @@ namespace EventTransformer
 
         public void AddToDictionary(string groupTopic)
         {
-            if (groupTopic == null)
-                throw new Exception("GroupTopic is null!");
-
-            EventDictValue groupTopicValue;
-            if (_groupTopicDictionary.TryGetValue(groupTopic, out groupTopicValue) == false)
+            lock (_locker)
             {
-                groupTopicValue = new EventDictValue();
-                _groupTopicDictionary.Add(groupTopic, groupTopicValue);
-            }
+                if (groupTopic == null)
+                    throw new Exception("GroupTopic is null!");
 
-            groupTopicValue.Count++;
+                EventDictValue groupTopicValue;
+                if (_groupTopicDictionary.TryGetValue(groupTopic, out groupTopicValue) == false)
+                {
+                    groupTopicValue = new EventDictValue();
+                    _groupTopicDictionary.Add(groupTopic, groupTopicValue);
+                }
+
+                groupTopicValue.Count++;
+            }
         }
 
-        public Dictionary<string, EventDictValue> GetOrderedTopicCountDictionary()
-            => _groupTopicDictionary.OrderByDescending(t => t.Value.Count).ToDictionary(t => t.Key, t => t.Value);
-
-        public void CleanDictionary() => _groupTopicDictionary.Clear();
+        /// <summary>
+        /// GetOrderedTopicCountDictionary
+        /// </summary>
+        /// <returns></returns>
+        public Dictionary<string, EventDictValue> GetSummaryAndCleanSourceDict()
+        {
+            lock (_locker)
+            {
+                var result =  _groupTopicDictionary.OrderByDescending(t => t.Value.Count).ToDictionary(t => t.Key, t => t.Value);
+                _groupTopicDictionary.Clear();
+                return result;
+            }
+        }
     }
 }
