@@ -13,4 +13,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EventAppCommon\EventAppCommon.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\..\..\..\..\.nuget\packages\rabbitmq.client\5.1.2\lib\net451\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

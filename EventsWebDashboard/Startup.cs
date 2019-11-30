@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EventAppCommon.Queue;
 using EventsWebDashboard.Managers;
 using EventsWebDashboard.Models;
+using EventsWebDashboard.Queue;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,10 +32,12 @@ namespace EventsWebDashboard
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSingleton(typeof(IMasterDictionaryManager), typeof(MasterDictionaryManager));
             services.AddScoped(typeof(IEventsManager), typeof(EventsManager));
+            services.AddSingleton(typeof(IQueueMessageConsumer), typeof(AggregatedEventsMessageConsumer));
+            services.AddSingleton(typeof(ISingleMessageConsumer), typeof(MasterDictionarySingleMessageConsumer));            
         }
-
+    
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IQueueMessageConsumer queueMessageConsumer)
         {
             if (env.IsDevelopment())
             {
@@ -50,6 +54,8 @@ namespace EventsWebDashboard
                 routes.MapRoute("default", "{controller=Events}/{action=Get}");
                 routes.MapRoute("cleanEvents", "{controller=Events}/{action=CleanEvents}");
             });
+
+            queueMessageConsumer.StartConsuming(); //start listening to queue
         }
     }
 }
