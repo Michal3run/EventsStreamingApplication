@@ -1,6 +1,6 @@
 ﻿using EventAppCommon.Log;
 using EventAppCommon.Queue;
-using EventTransformer;
+using EventTransformer.Queue;
 using EventTransformerWorker.Managers;
 using System;
 using System.Threading;

@@ -1,6 +1,7 @@
 ﻿using EventAppCommon.Message;
 using EventAppCommon.Queue;
 using EventTransformer;
+using EventTransformer.Managers;
 using EventTransformerWorker.Queue;
 using Newtonsoft.Json;
 using System;

@@ -1,10 +1,11 @@
 ﻿using EventAppCommon.Queue;
+using EventTransformer.Managers;
 using EventTransformer.Models;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace EventTransformer
+namespace EventTransformer.Queue
 {
     public class SingleRawEventMessageConsumer : ISingleMessageConsumer
     {
@@ -13,9 +14,7 @@ namespace EventTransformer
             var rawEventModel = JsonConvert.DeserializeObject<RawEventModel>(message);
 
             Console.WriteLine($"Consumed Message. Id: {rawEventModel.member.member_id},  Name: {rawEventModel.member.member_name}");
-
-            //TODO TRANSFORM AND PASS TO NEW QUEUE?
-
+            
             var transformedEventModel = GetTransformedEventModel(rawEventModel);
 
             transformedEventModel.GroupTopicNames.ForEach(topicName =>

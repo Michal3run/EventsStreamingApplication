@@ -3,11 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace EventTransformer
+namespace EventTransformer.Managers
 {
+    /// <summary>
+    /// Stores 
+    /// </summary>
     public class EventsCounterManager
     {
-        private readonly Dictionary<string, EventDictValue> _groupTopicDictionary = new Dictionary<string, EventDictValue>(); //ConcurrentDictionary? only one thread per application
+        private readonly Dictionary<string, EventDictValue> _groupTopicDictionary = new Dictionary<string, EventDictValue>(); //ConcurrentDictionary?
 
         private readonly object _locker = new object();
 
@@ -43,11 +46,11 @@ namespace EventTransformer
 
         public void AddToDictionary(string groupTopic)
         {
+            if (groupTopic == null)
+                throw new Exception("GroupTopic is null!");
+
             lock (_locker)
             {
-                if (groupTopic == null)
-                    throw new Exception("GroupTopic is null!");
-
                 EventDictValue groupTopicValue;
                 if (_groupTopicDictionary.TryGetValue(groupTopic, out groupTopicValue) == false)
                 {
@@ -65,7 +68,7 @@ namespace EventTransformer
         /// <returns></returns>
         public Dictionary<string, EventDictValue> GetSummaryAndCleanSourceDict()
         {
-            lock (_locker)
+            lock (_locker) //lock because, when reading from dictionary, and cleaning it, new items cannot be added
             {
                 var result =  _groupTopicDictionary.OrderByDescending(t => t.Value.Count).ToDictionary(t => t.Key, t => t.Value);
                 _groupTopicDictionary.Clear();
