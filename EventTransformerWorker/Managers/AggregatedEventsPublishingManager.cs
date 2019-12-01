@@ -1,14 +1,13 @@
-﻿using EventAppCommon.Message;
-using EventAppCommon.Queue;
-using EventTransformer;
-using EventTransformer.Managers;
-using EventTransformerWorker.Queue;
+﻿using EventsAppCommon.Message;
+using EventsAppCommon.Queue;
+using EventsTransformer.Managers;
+using EventsTransformerWorker.Queue;
 using Newtonsoft.Json;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace EventTransformerWorker.Managers
+namespace EventsTransformerWorker.Managers
 {
     public class AggregatedEventsPublishingManager : IDisposable
     {

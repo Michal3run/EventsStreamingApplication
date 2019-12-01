@@ -1,10 +1,10 @@
-﻿using EventAppCommon;
-using EventAppCommon.Message;
-using EventAppCommon.Queue;
+﻿using EventsAppCommon;
+using EventsAppCommon.Message;
+using EventsAppCommon.Queue;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace EventTransformerWorker.Queue
+namespace EventsTransformerWorker.Queue
 {
     public class AggregatedEventsMessageProducer : IQueueMessageProducer
     {

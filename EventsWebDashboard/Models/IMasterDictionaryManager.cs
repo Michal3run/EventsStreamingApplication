@@ -1,4 +1,4 @@
-﻿using EventTransformer.Models;
+﻿using EventsTransformer.Models;
 using System.Collections.Generic;
 
 namespace EventsWebDashboard.Models

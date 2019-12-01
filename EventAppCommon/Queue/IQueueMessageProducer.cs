@@ -1,7 +1,7 @@
-﻿using EventAppCommon.Message;
+﻿using EventsAppCommon.Message;
 using System;
 
-namespace EventAppCommon.Queue
+namespace EventsAppCommon.Queue
 {
     public interface IQueueMessageProducer : IDisposable
     {

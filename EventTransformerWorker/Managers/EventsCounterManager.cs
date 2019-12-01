@@ -1,9 +1,9 @@
-﻿using EventTransformer.Models;
+﻿using EventsTransformer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace EventTransformer.Managers
+namespace EventsTransformer.Managers
 {
     /// <summary>
     /// Stores 

@@ -1,6 +1,6 @@
-﻿using EventAppCommon.Queue;
+﻿using EventsAppCommon.Queue;
 using EventsWebDashboard.Models;
-using EventTransformer.Models;
+using EventsTransformer.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

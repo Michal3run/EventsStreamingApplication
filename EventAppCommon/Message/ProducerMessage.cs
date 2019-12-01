@@ -1,4 +1,4 @@
-﻿namespace EventAppCommon.Message
+﻿namespace EventsAppCommon.Message
 {
     public class ProducerMessage
     {

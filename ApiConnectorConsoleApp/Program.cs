@@ -1,6 +1,6 @@
 ﻿using ApiConnector;
-using EventAppCommon.Log;
-using EventAppCommon.Queue;
+using EventsAppCommon.Log;
+using EventsAppCommon.Queue;
 using System;
 using System.Threading;
 

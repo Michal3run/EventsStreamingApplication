@@ -1,4 +1,4 @@
-﻿namespace EventAppCommon
+﻿namespace EventsAppCommon
 {
     public static class QueueConfiguration
     {

@@ -1,11 +1,11 @@
-﻿using EventAppCommon.Queue;
-using EventTransformer.Managers;
-using EventTransformer.Models;
+﻿using EventsAppCommon.Queue;
+using EventsTransformer.Managers;
+using EventsTransformer.Models;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace EventTransformer.Queue
+namespace EventsTransformer.Queue
 {
     public class SingleRawEventMessageConsumer : ISingleMessageConsumer
     {

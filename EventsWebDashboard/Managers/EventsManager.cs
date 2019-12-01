@@ -1,6 +1,4 @@
-﻿using EventAppCommon.Queue;
-using EventsWebDashboard.Models;
-using EventTransformer.Models;
+﻿using EventsWebDashboard.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

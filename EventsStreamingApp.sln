@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventTransformerWorker", "EventTransformerWorker\EventTransformerWorker.csproj", "{A6496327-8A54-4FD7-A0A1-5768650BCC16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsTransformerWorker", "EventTransformerWorker\EventsTransformerWorker.csproj", "{A6496327-8A54-4FD7-A0A1-5768650BCC16}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventTransformerConsoleApp", "EventTransformerConsoleApp\EventTransformerConsoleApp.csproj", "{887B84D4-355E-43AB-85F2-AB76A1E32A81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsTransformerConsoleApp", "EventTransformerConsoleApp\EventsTransformerConsoleApp.csproj", "{887B84D4-355E-43AB-85F2-AB76A1E32A81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAppCommon", "EventAppCommon\EventAppCommon.csproj", "{168040C7-6006-4919-B51B-AFD5D486B194}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsAppCommon", "EventAppCommon\EventsAppCommon.csproj", "{168040C7-6006-4919-B51B-AFD5D486B194}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiConnector", "ApiConnector\ApiConnector.csproj", "{CBB86543-4ACF-4DE0-B463-07A889F71085}"
 EndProject

@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApiConnector\ApiConnector.csproj" />
-    <ProjectReference Include="..\EventAppCommon\EventAppCommon.csproj" />
+    <ProjectReference Include="..\EventAppCommon\EventsAppCommon.csproj" />
   </ItemGroup>
 
 </Project>

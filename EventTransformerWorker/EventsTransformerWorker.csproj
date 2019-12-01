@@ -5,6 +5,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <ApplicationIcon />
     <StartupObject />
+    <AssemblyName>EventsTransformerWorker</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EventAppCommon\EventAppCommon.csproj" />
+    <ProjectReference Include="..\EventAppCommon\EventsAppCommon.csproj" />
   </ItemGroup>
 
 </Project>

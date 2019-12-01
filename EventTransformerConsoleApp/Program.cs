@@ -1,11 +1,11 @@
-﻿using EventAppCommon.Log;
-using EventAppCommon.Queue;
-using EventTransformer.Queue;
-using EventTransformerWorker.Managers;
+﻿using EventsAppCommon.Log;
+using EventsAppCommon.Queue;
+using EventsTransformer.Queue;
+using EventsTransformerWorker.Managers;
 using System;
 using System.Threading;
 
-namespace EventTransformerConsoleApp
+namespace EventsTransformerConsoleApp
 {
     class Program
     {

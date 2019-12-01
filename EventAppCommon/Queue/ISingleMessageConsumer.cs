@@ -1,4 +1,4 @@
-﻿namespace EventAppCommon.Queue
+﻿namespace EventsAppCommon.Queue
 {
     /// <summary>
     /// Performs actions on received message

@@ -1,10 +1,10 @@
-﻿using EventAppCommon;
-using EventAppCommon.Queue;
+﻿using EventsAppCommon;
+using EventsAppCommon.Queue;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
-namespace EventTransformer.Queue
+namespace EventsTransformer.Queue
 {
     public class RawEventsQueueMessageConsumer : IQueueMessageConsumer
     {

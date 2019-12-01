@@ -1,6 +1,6 @@
-﻿using EventAppCommon.Log;
-using EventAppCommon.Message;
-using EventAppCommon.Queue;
+﻿using EventsAppCommon.Log;
+using EventsAppCommon.Message;
+using EventsAppCommon.Queue;
 using System.IO;
 using System.Net;
 using System.Threading;

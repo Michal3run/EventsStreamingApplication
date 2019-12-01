@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventAppCommon.Queue
+namespace EventsAppCommon.Queue
 {
     public interface IQueueMessageConsumer : IDisposable
     {

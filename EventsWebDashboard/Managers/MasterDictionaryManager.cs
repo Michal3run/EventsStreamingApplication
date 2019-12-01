@@ -1,5 +1,5 @@
 ﻿using EventsWebDashboard.Models;
-using EventTransformer.Models;
+using EventsTransformer.Models;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;

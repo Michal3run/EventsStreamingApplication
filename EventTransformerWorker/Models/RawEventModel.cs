@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EventTransformer.Models
+namespace EventsTransformer.Models
 {
     public class RawEventModel
     {

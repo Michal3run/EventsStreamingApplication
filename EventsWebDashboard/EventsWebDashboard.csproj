@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EventAppCommon\EventAppCommon.csproj" />
+    <ProjectReference Include="..\EventAppCommon\EventsAppCommon.csproj" />
   </ItemGroup>
 
   <ItemGroup>

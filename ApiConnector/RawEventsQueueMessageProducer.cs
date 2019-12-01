@@ -1,6 +1,6 @@
-﻿using EventAppCommon;
-using EventAppCommon.Message;
-using EventAppCommon.Queue;
+﻿using EventsAppCommon;
+using EventsAppCommon.Message;
+using EventsAppCommon.Queue;
 using RabbitMQ.Client;
 using System.Text;
 
